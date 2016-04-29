@@ -1,3 +1,7 @@
+if(!file.exists("UCI HAR Dataset")){
+  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile="getdata-projectfiles-UCI HAR Dataset.zip")
+  unzip("getdata-projectfiles-UCI HAR Dataset.zip")
+}
 testsetx<-read.table("UCI HAR dataset/test/x_test.txt")
 trainsetx<-read.table("UCI HAR dataset/train/x_train.txt")
 testsety<-read.table("UCI HAR dataset/test/y_test.txt")
